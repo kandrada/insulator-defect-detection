@@ -1,0 +1,28 @@
+#Entorno y archivos locales
+.venv/
+venv/
+.env
+
+#Cachés de Python y Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+#Dataset completo
+data/raw/
+data/processed/
+data/external/
+
+#Checkpoints: conservar solo el modelo seleccionado
+artifacts/*.pt
+artifacts/*.pkl
+!artifacts/mobilenet_final.pt
+
+#Archivos comprimidos y carpeta de entrega
+*.zip
+entrega_aisladores/
+
+#Archivos del sistema
+.DS_Store
+Thumbs.db
